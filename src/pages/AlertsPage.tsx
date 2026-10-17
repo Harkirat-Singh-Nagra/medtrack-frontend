@@ -1,0 +1,3 @@
+export default function AlertsPage() {
+  return <h1 className="text-2xl font-bold text-blue-900">Alerts</h1>;
+}
