@@ -1,4 +1,4 @@
-import type { Medication, Pharmacy } from '../types';
+import type { Medication, Pharmacy, AlertItem } from '../types';
 
 export const pharmacies: Pharmacy[] = [
   { id: 'p1', name: 'Riverside Pharmacy', distanceKm: 0.8, open: true, closes: '9:00 PM', address: '12 River St' },
@@ -14,4 +14,10 @@ export const initialMedications: Medication[] = [
     intakeTimes: ['08:00', '20:00'], remaining: 3, refillThreshold: 5, pharmacyId: 'p2', remindersOn: true },
   { id: 'm3', name: 'Atorvastatin', dosage: '20 mg', tabletsPerIntake: 1, condition: 'High Cholesterol',
     intakeTimes: ['21:00'], remaining: 28, refillThreshold: 5, pharmacyId: 'p1', remindersOn: true },
+];
+
+export const alertHistory: AlertItem[] = [
+  { id: 'h1', type: 'Reminder', message: 'Metformin 500 mg (taken now)', severity: 'Low', timestamp: '2026-10-16T10:12:00' },
+  { id: 'h2', type: 'Refill', message: 'Atorvastatin 20 mg (3 tablets left)', severity: 'Medium', timestamp: '2026-10-15T18:30:00' },
+  { id: 'h3', type: 'DDI', message: 'Lisinopril + Atorvastatin', severity: 'High', timestamp: '2026-10-14T07:45:00' },
 ];
