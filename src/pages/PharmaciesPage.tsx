@@ -70,10 +70,10 @@ export default function PharmaciesPage() {
       </div>
 
       <div className="grid gap-4 lg:grid-cols-[1fr_340px]">
-        {/* Map placeholder: swap for the real Bing Maps component later */}
+        {/* Map placeholder: will swap for the real component later */}
         <div className="relative min-h-96 overflow-hidden rounded-xl border border-slate-200 bg-slate-200">
           <p className="absolute left-3 top-3 rounded bg-white/80 px-2 py-1 text-xs text-slate-600">
-            Map placeholder (Bing Maps goes here)
+            Map placeholder (this is under discussion with the team)
           </p>
           {results.map((p, i) => {
             const spot = pinSpots[i % pinSpots.length];
