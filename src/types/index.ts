@@ -30,3 +30,12 @@ export interface AlertItem {
   severity: Severity;
   timestamp: string;
 }
+
+export interface IntakeRecord {
+  id: string;
+  date: string; // "2026-10-16"
+  time: string; // "08:00"
+  medicationName: string;
+  dosage: string;
+  status: 'Taken' | 'Missed' | 'Skipped';
+}
